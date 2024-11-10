@@ -1,0 +1,205 @@
+/**** Global  ****/
+body {
+  font-family: "Nunito", sans-serif;
+  color: var(--main-color);
+  font-size: 16px;
+}
+
+:root {
+  --main-color: #ffffff;
+  --second-color: #444444;
+  --black-color: #000;
+  --site-color: #e68285;
+}
+
+/**** Global  ****/
+
+/**** Theme  ****/
+
+::selection {
+  background-color: var(--site-color);
+}
+
+::-webkit-scrollbar {
+  width: 0.9375rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--main-color);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.3125rem;
+  background-color: var(--site-color);
+  box-shadow: 0 0 0.3125rem var(--site-color) inset;
+}
+/**** Theme  ****/
+
+/**** Header  ****/
+header.home {
+  background: linear-gradient(rgba(160, 44, 44, 0.7), rgba(176, 47, 47, 0.7)),
+    url("../assets/images/header.jpg") no-repeat center center / cover;
+  min-height: 100vh;
+}
+
+header.home h1 {
+  font-size: 3.75rem;
+  font-weight: 700;
+}
+
+@media (max-width: 500px) {
+  header.home h1 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+}
+
+/**** Header  ****/
+
+/**** Aside  ****/
+.open {
+  min-height: 100vh;
+  width: 16.875rem;
+  z-index: 10;
+  left: -270px;
+  top: 0;
+  transition: all 1s ease-in-out;
+  background-color: var(--black-color);
+}
+
+.open-icon {
+  right: -115px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  cursor: pointer;
+  transition: color 0.5s;
+  color: var(--black-color);
+}
+
+.open-icon:hover {
+  color: var(--site-color);
+}
+.open li {
+  font-size: 1.5625rem;
+  padding: 0.625rem;
+  line-height: 37.5px;
+}
+
+.open li a {
+  text-decoration: none;
+  color: var(--main-color);
+  transition: color 0.5s;
+}
+
+.open a:hover {
+  color: var(--site-color);
+}
+
+.open ul i {
+  top: 2.5rem;
+  right: 1.25rem;
+}
+
+.open ul > i {
+  transition: color 0.5s;
+  cursor: pointer;
+}
+
+.open ul > i:hover {
+  color: var(--site-color);
+}
+
+/**** Aside  ****/
+
+/**** Duration  ****/
+
+.acc h3 {
+  background-color: var(--site-color);
+  font-size: 1.75rem;
+  line-height: 2.1rem;
+  font-weight: 600;
+  padding: 0.625rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.acc p {
+  background-color: #cccccc;
+  color: var(--second-color);
+  text-align: justify;
+  text-transform: capitalize;
+  padding: 1rem;
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .acc {
+    width: 100% !important;
+  }
+}
+
+/**** Duration  ****/
+
+/**** Details  ****/
+.Details {
+  background: linear-gradient(rgba(160, 44, 44, 0.7), rgba(176, 47, 47, 0.7)),
+    url("../assets/images/details.jpg") no-repeat center center / cover;
+  min-height: 50vh;
+}
+
+.Details .time {
+  padding: 3.125rem;
+  border: 1px solid var(--main-color);
+  font-weight: 500;
+  font-size: 1.875rem;
+}
+
+/**** Details  ****/
+
+/**** Contact  ****/
+
+#Contact {
+  margin-top: 6.25rem;
+}
+
+#Contact .container {
+  padding-block: 6.25rem;
+}
+
+#Contact .icons li {
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #999;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3125rem;
+  transition: background-color 0.5s ease-in-out;
+}
+
+#Contact .icons li:hover {
+  background-color: var(--site-color);
+}
+
+#Contact .icons li i {
+  transition: color 0.5s ease-in-out;
+}
+
+#Contact .icons li:hover i {
+  color: var(--main-color);
+}
+
+/**** Contact  ****/
+
+/**** Footer  ****/
+
+footer {
+  background-color: var(--site-color);
+  padding: 0.9375rem;
+  text-align: center;
+}
+
+/**** Footer  ****/
